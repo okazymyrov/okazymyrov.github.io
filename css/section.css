@@ -1,0 +1,54 @@
+/* @group section */
+
+.section {
+  width: 950px;
+  margin: 0 auto;
+  padding: 20px 0;
+  background: url(../images/line.png) repeat-x 0 bottom;
+  overflow: hidden;
+}
+
+.section h2 {
+  width: 160px;
+  padding-right: 30px;
+  float: left;
+  padding-top: 0;
+  line-height: 22px;
+}
+
+.section h3 {
+  line-height: 30px;
+  margin-bottom: 32px;
+  font-style: italic;
+}
+
+.section h4 {
+  font-weight: normal;
+  font-style: normal;
+  margin-bottom: 20px;
+  margin-top: -20px;
+}
+
+.section .date {
+  position: absolute;
+  top: 6px;
+  right: 0;
+}
+
+.section .item {
+  width: 710px;
+  padding-left: 50px;
+  float: right;
+  padding-top: 0;
+  margin-bottom: 9px;
+  position: relative;
+  padding-bottom: 5px;
+  background: url(../images/separator.png) no-repeat 0 bottom;
+}
+
+.section .description {
+  width: 100%;
+  text-align: justify;
+}
+
+/* @end */

@@ -1,0 +1,65 @@
+/* @group about */
+
+.picture {
+  width: 220px;
+  float: left;
+}
+
+.picture img
+{
+  max-width: 100%; 
+  max-height: 100%;
+}
+
+.story {
+  font-size: 18px;
+  line-height: 25px;
+  width: 710px;
+  float: left;
+  padding-left: 10px;
+  text-align: justify;
+}
+
+.story h1 {
+  margin-bottom: 4px;
+  margin-top: 2px;
+}
+
+.story h2 {
+  font-size: 14px;
+  line-height: 20px;
+  font-style: italic;
+  margin-bottom: 14px;
+}
+
+/* @group contact */
+
+.contact {
+  width: 220px;
+  float: left;
+  clear: both;
+}
+
+.contact ul {
+  list-style-type: none;
+}
+
+.contact li {
+  width: 220px;
+  overflow: hidden;
+  margin-bottom: 5px;
+}
+
+.contact li span {
+  float: left;
+}
+
+.contact li strong {
+  float: right;
+  text-align: right;
+  color: #3c3c3c;
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* @end */

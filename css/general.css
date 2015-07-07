@@ -1,0 +1,65 @@
+/* @group basics */
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font: 14px/20px Georgia, "Times New Roman", Times, serif;
+  color: #848484;
+  background: url(../images/noise.jpg);
+}
+
+body.grid {
+  background-image: url(../images/grid.png);
+}
+
+h1 {
+  font-size: 41px;
+  line-height: 50px;
+  font-weight: normal;
+  font-style: normal;
+  color: #3c3c3c;
+}
+
+h2 {
+  font-size: 27px;
+  line-height: 30px;
+  font-weight: normal;
+  font-style: normal;
+  color: #848484;
+}
+
+h3 {
+  font-size: 27px;
+  line-height: 30px;
+  font-weight: normal;
+  font-style: normal;
+  text-align: justify;
+  color: #3c3c3c;
+}
+
+p {
+  margin-bottom: 20px;
+}
+
+a:link, a:visited {
+  color: #800000;
+  text-decoration: none;
+}
+
+a:link:hover, a:visited:hover {
+  text-decoration: underline;
+  color: #800000;
+}
+
+.main {
+  width: 950px;
+  padding: 80px 0 59px;
+  margin: 0 auto;
+  background: url(../images/line.png) repeat-x 0 bottom;
+  overflow: hidden;
+}
+
+/* @end */

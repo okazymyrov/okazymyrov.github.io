@@ -1,0 +1,46 @@
+/* @group small */
+
+body.small {
+}
+
+body.small #header ul  {
+  width: 750px;
+}
+
+body.small #about {
+  width: 750px;
+  position: relative;
+  padding-bottom: 65px;
+  min-height: 260px;
+}
+
+body.small #about #story {
+  float: right;
+}
+
+body.small #about #contact {
+  float: left;
+  padding-top: 0;
+  padding-right: 0;
+  clear: left;
+}
+
+body.small #about #picture {
+  clear: none;
+  float: left;
+  position: absolute;
+  top: 80px;
+  right: 0;
+}
+
+/* --- */
+
+body.small .section {
+  width: 750px;
+}
+
+body.small .section .item {
+  width: 510px;
+}
+
+/* @end */
