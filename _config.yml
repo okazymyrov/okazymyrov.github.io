@@ -6,7 +6,7 @@ description: > # this means to ignore newlines until "baseurl:"
   Cryptographer, IT Security Specialist, <br>
   Technical Test Analyst in NFT
 baseurl: "" # the subpath of your site, e.g. /blog/
-url: "http://127.0.0.1:4000" # the base hostname & protocol for your site
+url: "https://okazymyrov.github.io/" # the base hostname & protocol for your site
 logourl: /assets/images/logo.png # Site logo
 author: "Oleksandr Kazymyrov"
 author_thumbnail: "/assets/images/avatar.jpg" # Author avatar
