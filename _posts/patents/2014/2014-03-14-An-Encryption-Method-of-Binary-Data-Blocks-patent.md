@@ -10,4 +10,4 @@ browser_title: "An Encryption Method of Binary Data Blocks"
 comments: true
 ---
 
-Ukrainian: [Description](http://base.ukrpatent.org/searchINV/search.php?action=viewdetails&amp;IdClaim=193372)
+Ukrainian: [PDF]({{ site.url }}/assets/attachments/patents/2014/f1cea7b16f9e388a743eabf96117f0.pdf)
