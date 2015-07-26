@@ -1,0 +1,16 @@
+- title: "Articles"
+  href: "/articles"
+- title: "Abstracts"
+  href: "/abstracts"
+- title: "Presentations"
+  href: "/presentations"
+- title: "Theses"
+  href: "/theses"
+- title: "Patents"
+  href: "/Patents"
+- title: "About me" # Title/Caption of the menu item
+  href: "/about" # the page where it pointed 
+- title: "Contacts"
+  href: "/contacts"
+- title: "Curriculum vitae"
+  href: "/cv"

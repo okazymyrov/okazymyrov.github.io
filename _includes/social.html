@@ -1,0 +1,44 @@
+{% capture social_media_li %}
+<ul class="social-media">
+    {% if site.theme.social.linkedin %}
+    <li>
+        <a title="{{ site.theme.social.linkedin }} on LinkedIn" 
+            href="https://linkedin.com/in/{{ site.theme.social.linkedin }}" 
+            class="linkedin wc-img-replace" target="_blank">LinkedIn</a>
+    </li>
+    {% endif %} 
+    
+    {% if site.theme.social.gplus %}
+    <li>
+        <a title="{{ site.theme.social.gplus }} on Google Plus" 
+            href="https://plus.google.com/{{ site.theme.social.gplus }}" 
+            class="google wc-img-replace" target="_blank">Google</a>
+    </li>
+    {% endif %}
+
+    {% if site.theme.social.facebook %}
+    <li>
+        <a title="{{ site.theme.social.facebook }} on Facebook" 
+            href="https://facebook.com/{{ site.theme.social.facebook }}" 
+            class="facebook wc-img-replace" target="_blank">Facebook</a>
+    </li>
+    {% endif %}
+
+    {% if site.theme.social.github %}
+    <li>
+        <a title="{{ site.theme.social.github }} on Github" 
+            href="https://github.com/{{ site.theme.social.github }}" 
+            class="github wc-img-replace" target="_blank">Github</a>
+    </li>
+    {% endif %} 
+
+    <li>
+        <a title="Subscribe via RSS" 
+            href="{{ '/feed.xml' | prepend: site.baseurl | prepend: site.url }}"
+            class="rss wc-img-replace" target="_blank">
+            RSS
+        </a>
+    </li>
+
+</ul>
+{% endcapture %}{{ social_media_li | strip_newlines }}
