@@ -10,7 +10,7 @@ browser_title: "A New Standard of Ukraine: The Kupyna Hash Function"
 comments: true
 ---
 
-English: [PDF]({{ site.url }}/assets/attachments/articles/2015/099ec95c87865d268984ca1782cfb7.pdf)
+English: [PDF]({{ site.url }}/assets/attachments/articles/2015/099ec95c87865d268984ca1782cfb7.pdf) Ukrainian: [PDF]({{ site.url }}/assets/attachments/articles/2015/93064525cf203d83b7a391cd5253fb.pdf)
 ___
 
 <!--more-->
