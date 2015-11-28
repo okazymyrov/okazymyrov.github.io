@@ -11,4 +11,3 @@ comments: true
 ---
 
 English: [PDF]({{ site.url }}/assets/attachments/presentations/2014/6df614820f3625cee3c79152432cc0.pdf) <span style="float: right;">[BFA 2014](http://www.people.uib.no/lbu061/BFA2014.html)</span>
-

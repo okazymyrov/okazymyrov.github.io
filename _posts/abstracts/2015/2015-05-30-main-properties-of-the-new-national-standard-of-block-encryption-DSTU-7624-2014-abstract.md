@@ -11,7 +11,6 @@ comments: true
 ---
 
 Russian: [PDF]({{ site.url }}/assets/attachments/abstracts/2015/62ecf5f38d1a41bbdc35452c6fa17a.pdf)
-___
 
 <!--more-->
 

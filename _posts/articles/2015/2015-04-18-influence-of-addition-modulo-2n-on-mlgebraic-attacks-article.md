@@ -11,7 +11,6 @@ comments: true
 ---
 
 English: [PDF]({{ site.url }}/assets/attachments/articles/2015/3856d196e159368deb33c7502c140d.pdf)
-___
 
 <!--more-->
 

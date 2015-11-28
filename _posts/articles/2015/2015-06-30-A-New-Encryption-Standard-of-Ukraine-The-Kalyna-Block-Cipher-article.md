@@ -10,8 +10,7 @@ browser_title: "A New Encryption Standard of Ukraine: The Kalyna Block Cipher"
 comments: true
 ---
 
-English: [PDF]({{ site.url }}/assets/attachments/articles/2015/8c5a68b93a9e5204d3c275f51ae182.pdf) Ukrainian: [PDF]({{ site.url }}/assets/attachments/articles/2015/7488c509ca58627b69ea87d440d3f8.pdf)
-___
+English: [PDF]({{ site.url }}/assets/attachments/articles/2015/4a950e58a23ff9dd513b7c448de851.pdf) [PDF]({{ site.url }}/assets/attachments/articles/2015/8c5a68b93a9e5204d3c275f51ae182.pdf) Ukrainian: [PDF]({{ site.url }}/assets/attachments/articles/2015/7488c509ca58627b69ea87d440d3f8.pdf)
 
 <!--more-->
 

@@ -10,4 +10,4 @@ browser_title: "Methods and Tools for Analysis of Symmetric Cryptographic Primit
 comments: true
 ---
 
-English: [PDF]({{ site.url }}/assets/attachments/presentations/2014/094ac0efc259a6e31f4305ff6d3154.pdf) <span style="float: right;">[Thesis]({% post_url /theses/2014/2014-12-01-Methods-and-Tools-for-Analysis-of-Symmetric-Cryptographic-Primitives-thesis %})</span>
+English: [PDF]({{ site.url }} /assets/attachments/presentations/2014/094ac0efc259a6e31f4305ff6d3154.pdf) <span style="float: right;">[Thesis]({% post_url 2014-12-01-Methods-and-Tools-for-Analysis-of-Symmetric-Cryptographic-Primitives-thesis %})</span>

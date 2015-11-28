@@ -11,7 +11,6 @@ comments: true
 ---
 
 English: [PDF]({{ site.url }}/assets/attachments/articles/2013/13c464f5080846e6bec2988fed1d2a.pdf) Russian: [PDF]({{ site.url }}/assets/attachments/articles/2011/bfdbc6d5d3dd40484047151726008b.pdf) Russian: [PDF]({{ site.url }}/assets/attachments/articles/2012/cb2a798f82b13d640692a32579215b.pdf) 
-___
 
 <!--more-->
 
