@@ -71,7 +71,7 @@ whitelist: []
 gems:      [jekyll-paginate]
 
 # Conversion
-markdown:    kramdown
+markdown:    redcarpet
 excerpt_separator: "<!--more-->"
 # highlighter: rouge
 # lsi:         false
