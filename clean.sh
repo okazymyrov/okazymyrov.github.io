@@ -1,3 +1,3 @@
 #!/bin/bash
 
-rm -fr ./.sass-cache ./_site
+rm -fr ./.sass-cache ./_site ./Gemfile.lock

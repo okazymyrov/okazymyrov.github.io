@@ -19,13 +19,13 @@ layout: default
     {% endif %}
 
     <h1 class="post-title">
-      <a href="{{ post.url | append: '/' | replace: '//', '/' | prepend: site.baseurl | prepend: site.url |  }}">
+      <a href="{{ post.url | append: '/' | replace: '//', '/' | prepend: site.baseurl | prepend: site.url }}">
         {{ post.title }}
       </a>
     </h1>
 
     <p class="post-meta">
-    {% if (post.categories.size > 0 %}
+    {% if post.categories.size > 0 %}
       <span class="categories">
       {{ post.categories | array_to_sentence_string }}
       </span> |
@@ -36,7 +36,7 @@ layout: default
     </p>
 
     {{ post.excerpt }}
-    <a href="{{ post.url | append: '/' | replace: '//', '/' | prepend: site.baseurl | prepend: site.url |  }}">
+    <a href="{{ post.url | append: '/' | replace: '//', '/' | prepend: site.baseurl | prepend: site.ur  }}">
       Continue reading »
     </a>
   </article>
