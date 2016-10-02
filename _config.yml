@@ -13,7 +13,7 @@ author: "Oleksandr Kazymyrov"
 author_thumbnail: "/assets/images/avatar.jpg" # Author avatar
 
 # Theme customization
-theme:
+custom_theme:
   # Color for sidebar bar, links, etc
   highlight_color: "#205081" # "205081" # "#272935"
   # Social media links, leave blank to ignore
