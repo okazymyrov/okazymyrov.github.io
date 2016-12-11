@@ -4,11 +4,13 @@ title: About me
 permalink: /about/
 ---
 
-I graduated from [Kharkov National University of Radio Electronics](http://nure.ua/en/) (Ukraine), Department of Information Technology Security, in 2010. Started as a research fellow at the Department of Informatics, [University of Bergen](http://www.uib.no/) (Norway), in 2011. As a PhD student at the UoB I did my studies on the topic of symmetric primitives. My main interests were nonlinear components (substitutions) for modern symmetric algorithms including block ciphers, stream ciphers and hash functions. Moreover, I was also interested in diverse aspects of information security such as modern trends in designing of the next generation symmetric ciphers, cloud computations and security, secure protocols, computer network security and security analysis of complex systems.
+In 2014 I received a Ph.D. degree from the [University of Bergen](http://www.uib.no/). The main direction of my research was the development and analysis of symmetric cryptographic primitives. A part of the research has been devoted to the development of the Ukrainian standards of block cipher and hash function ([DSTU 7624:2014](https://eprint.iacr.org/2015/650.pdf) and [DSTU 7564:2014](https://eprint.iacr.org/2015/885.pdf)).
 
-In 2014 I got the degree of Candidate of Engineering Sciences in Information Security in Ukraine. Later this year I was awarded with the Doctor of Philosophy degree at the University of Bergen for ["Methods and Tools for Analysis of Symmetric Cryptographic Primitives"]({% post_url /theses/2014/2014-12-01-Methods-and-Tools-for-Analysis-of-Symmetric-Cryptographic-Primitives-thesis %}).
+After graduating, I got a technical test analyst position in [EVRY](https://www.evry.com/). The main responsibilities are perform full cycle non-functional tests and aid [PCI DSS](https://www.pcisecuritystandards.org/) audits mainly in Requirement 11.1-11.3. Moreover, I contribute to methodologies, processes and corporate policies covering non-functional testing.
 
-Currently I hold the position of technical test analyst with a focus on non-functional testing in [EVRY](https://www.evry.com). The main responsibilities are designing and performing security and penetration tests of web applications, networks, and systems in [Financial Services](https://www.evry.com/services/industry/financialservices/). More information can be found on [LinkedIn](https://www.linkedin.com/in/okazymyrov).
+Moreover, I am also interested in all aspects of information security, including modern trends in the design of next generation symmetric cryptoprimitives, cloud computations and security, secure protocols, and computer network security.
+
+More information can be found on [LinkedIn](https://www.linkedin.com/in/okazymyrov).
 
 ---
 
