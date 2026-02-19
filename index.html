@@ -2,70 +2,63 @@
 layout: default
 ---
 
-<div class="posts">
-  {% for post in paginator.posts %}
-  {% assign post_url = post.url | append: '/' | replace: '//', '/' | prepend: site.baseurl | prepend: site.url | %}
-  <article class="post">
+<section class="hero card">
+  <div class="hero-inner">
+    {% if site.author_thumbnail %}
+    <img class="hero-avatar" src="{{ site.author_thumbnail | prepend: site.baseurl | prepend: site.url }}" alt="{{ site.author }}">
+    {% endif %}
+    <div class="hero-text">
+      <h1>{{ site.title }}</h1>
+      <p>{{ site.tagline }}</p>
+      <div class="hero-links">
+        {% if site.social.linkedin %}<a href="https://linkedin.com/in/{{ site.social.linkedin }}" target="_blank" rel="noopener noreferrer">LinkedIn</a>{% endif %}
+        {% if site.social.github %}<a href="https://github.com/{{ site.social.github }}" target="_blank" rel="noopener noreferrer">GitHub</a>{% endif %}
+        {% if site.social.email %}<a href="mailto:{{ site.social.email }}">Email</a>{% endif %}
+      </div>
+    </div>
+  </div>
+</section>
 
-    {% if post.banner_image %}
-    <div class="banner-image">
-      <a href="{{ post_url }}"
-        title="{{ post.title }}">
-      <img 
-          src="{{ "/assets/images/" | append: post.banner_image | prepend: site.baseurl | prepend: site.url }}" 
-          alt="{% if post.banner_image_alt %}{{ post.banner_image_alt }}{% else %}{{ post.title }} {% endif %}">
-      </a>
+<section class="posts-section">
+  <h2 class="section-title">Recent Publications</h2>
+  {% for post in paginator.posts %}
+  <article class="post-card card">
+    <h3 class="post-card-title">
+      <a href="{{ post.url | prepend: site.baseurl | prepend: site.url }}">{{ post.title }}</a>
+    </h3>
+    <div class="post-card-meta">
+      <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%B %-d, %Y" }}</time>
+      {% if post.categories.size > 0 %}
+        <span class="post-card-tags">
+          {% for cat in post.categories %}
+            <span class="tag">{{ cat }}</span>
+          {% endfor %}
+        </span>
+      {% endif %}
+    </div>
+    {% if post.excerpt %}
+    <div class="post-card-excerpt">
+      {{ post.excerpt }}
     </div>
     {% endif %}
-
-    <h1 class="post-title">
-      <a href="{{ post.url | append: '/' | replace: '//', '/' | prepend: site.baseurl | prepend: site.url }}">
-        {{ post.title }}
-      </a>
-    </h1>
-
-    <p class="post-meta">
-    {% if post.categories.size > 0 %}
-      <span class="categories">
-      {{ post.categories | array_to_sentence_string }}
-      </span> |
-    {% endif %}
-    <span class="post-date">
-    {{ post.date | date: "%b %-d, %Y" }}{% if post.author %} • {{ post.author }}{% endif %}{% if post.meta %} • {{ post.meta }}{% endif %}  
-    </span>
-    </p>
-
-    {{ post.excerpt }}
-    <a href="{{ post.url | append: '/' | replace: '//', '/' | prepend: site.baseurl | prepend: site.ur  }}">
-      Continue reading »
-    </a>
   </article>
   {% endfor %}
-</div>
+</section>
 
 {% if paginator.total_pages > 1 %}
-<div class="pagination">
-  
-  {% if paginator.next_page %}
-      <a class="pagination-item older btn" href="{{ paginator.next_page_path | prepend: site.baseurl | append: '/' | replace: '//', '/' }}">Older</a>    
-  {% else %}
-    <span class="pagination-item older btn-disabled">Older</span>
-  {% endif %}
-  
+<nav class="pagination" aria-label="Pagination">
   {% if paginator.previous_page %}
-    <a class="pagination-item newer btn " href="{{ paginator.previous_page_path | prepend: site.baseurl | append: '/' | replace: '//', '/' }}">Newer</a>
+    <a class="pagination-btn" href="{{ paginator.previous_page_path | prepend: site.baseurl | append: '/' | replace: '//', '/' }}">&larr; Newer</a>
   {% else %}
-    <span class="pagination-item newer btn-disabled">Newer</span>
-  {% endif %}  
-  
-</div>
-{% endif %}
+    <span class="pagination-btn disabled">&larr; Newer</span>
+  {% endif %}
 
-<script type="application/ld+json">
-{
-    "@context": "http://schema.org",
-    "@type": "WebSite",
-    "url": "{{ '' | prepend: site.baseurl | prepend: site.url | append: '/' }}"
-    }
-}
-</script>
+  <span class="pagination-info">Page {{ paginator.page }} of {{ paginator.total_pages }}</span>
+
+  {% if paginator.next_page %}
+    <a class="pagination-btn" href="{{ paginator.next_page_path | prepend: site.baseurl | append: '/' | replace: '//', '/' }}">Older &rarr;</a>
+  {% else %}
+    <span class="pagination-btn disabled">Older &rarr;</span>
+  {% endif %}
+</nav>
+{% endif %}

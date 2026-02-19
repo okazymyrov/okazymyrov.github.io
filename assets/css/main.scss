@@ -1,687 +1,715 @@
 ---
-# Only the main Sass file needs front matter (the dashes are enough)
+# Main stylesheet
 ---
-
-/**
- *
- * Gaya jekyll theme
- * Designed, built, by web-create. 
- *
- * CONTENTS
- *
- * SETTINGS
- * Globals              - Import sass global variables and configs properties
- *
- * TOOLS
- * Mixins/Functions     - Sass mixins & functions
- * Modules              - Sass modules
- *
- * GENERTIC
- * Resets               - Gloabal resets thanks to meyerweb.com
- * Body resets          - Body resets, box sizing 
- * 
- * BASE
- * Typography           - Custom typography
- * Syntax               - Syntax highlighting
- * 
- * OBJECTS
- * Wrappers             - Wrapping and constraining elements.
- *  
- * COMPONENTS
- * header               - Site header
- * sidebar              - Sidebar & toggle
- * post/pages           - Post/Page articles
- * paginate buttons     - Paginate buttons
- * post-banner          - Banner image/video
- * comments             - Post comments
- * author info/links    - Author info and share buttons
- */
-
-
-
-
 
 @charset "utf-8";
 
+// ============================================================
+// Variables
+// ============================================================
 
+$color-primary: #1a56db;
+$color-primary-dark: #1e40af;
+$color-primary-light: #dbeafe;
+$color-text: #1f2937;
+$color-text-light: #6b7280;
+$color-bg: #f9fafb;
+$color-white: #ffffff;
+$color-border: #e5e7eb;
+$color-border-light: #f3f4f6;
+$font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+$font-mono: 'JetBrains Mono', 'Fira Code', monospace;
+$max-width: 800px;
+$header-height: 64px;
+$radius: 8px;
+$shadow: 0 1px 3px rgba(0, 0, 0, 0.08), 0 1px 2px rgba(0, 0, 0, 0.06);
+$shadow-md: 0 4px 6px rgba(0, 0, 0, 0.07), 0 2px 4px rgba(0, 0, 0, 0.06);
+$transition: 0.2s ease;
 
+// ============================================================
+// Reset & Base
+// ============================================================
 
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 
-/*------------------------------------*\
-    #SETTINGS-GLOBALS
-\*------------------------------------*/
-
-@import "helpers/variables";
-
-
-
-
-
-
-/*------------------------------------*\
-    #TOOLS-MIXINGS-AND-FUNCTIONS
-\*------------------------------------*/
-
-@import "helpers/all";
-
-
-
-
-
-/*------------------------------------*\
-    #TOOLS-MODULES
-\*------------------------------------*/
-
-@import "modules/all";
-
-
-
-
-
-/*------------------------------------*\
-    #GENERTIC-RESETS
-\*------------------------------------*/
-
-@import "base/reset";
-
-
-
-
-
-/*------------------------------------*\
-    #GENERTIC-BODY-RESETS
-\*------------------------------------*/
-
-/*
- *
- * Enable google webkit font smoothing
- * Reset to border-box
- * Setting up font family
- */
-
-html * {
+html {
+  font-size: 16px;
+  scroll-behavior: smooth;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-
-  //change the default tap highlight color, when you tap on mobile device
-  -webkit-tap-highlight-color: transparent;
-}
-
-*, *:after, *:before {
-  @include box-sizing(border-box);
 }
 
 body {
-  font: {
-    size: 100%;
-    family: $font-family-base; // variables inside partials > _variables.scss
-  }
-  color: $gray-dark;
-  background: $main-bg-color;
+  font-family: $font-sans;
+  color: $color-text;
+  background: $color-bg;
+  line-height: 1.7;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
-/* Prevent scroll on narrow devices */
-html,
-body {
-  overflow-x: hidden;
-}
-
-/* Anchor tag style */
 a {
+  color: $color-primary;
   text-decoration: none;
-  border-bottom: 1px solid transparent;
-  color: $color-1;
+  transition: color $transition;
+
+  &:hover {
+    color: $color-primary-dark;
+  }
 }
 
-a:hover {
-  @include transition(all .3s);
-  border-bottom-color: $color-1; 
-}
-
-/* Responsive images */
 img {
-  border: 0;
-  display: block;
   max-width: 100%;
   height: auto;
+  display: block;
 }
 
+h1, h2, h3, h4, h5, h6 {
+  line-height: 1.3;
+  font-weight: 600;
+  color: $color-text;
+}
 
-/*------------------------------------*\
-    #SETTINGS-TYPE
-\*------------------------------------*/
+h1 { font-size: 2rem; }
+h2 { font-size: 1.5rem; }
+h3 { font-size: 1.25rem; }
+h4 { font-size: 1.1rem; }
+h5 { font-size: 1rem; }
 
-@import "base/type";
+ul, ol {
+  padding-left: 1.5rem;
+}
 
+hr {
+  border: none;
+  border-top: 1px solid $color-border;
+  margin: 2rem 0;
+}
 
+code {
+  font-family: $font-mono;
+  font-size: 0.875em;
+  background: $color-border-light;
+  padding: 0.15em 0.4em;
+  border-radius: 4px;
+}
 
+pre {
+  background: #1e293b;
+  color: #e2e8f0;
+  padding: 1.25rem;
+  border-radius: $radius;
+  overflow-x: auto;
+  margin: 1.5rem 0;
+  line-height: 1.5;
 
+  code {
+    background: none;
+    padding: 0;
+    color: inherit;
+    font-size: 0.875rem;
+  }
+}
 
-/*------------------------------------*\
-    #SETTINGS-SYNTAX
-\*------------------------------------*/
-
-@import "base/syntax-highlighting";
-
-
-
-
-
-/*------------------------------------*\
-    #OBJECTS-WRAPPERS
-\*------------------------------------*/
-
-/*
- * Main wrapper is used to re-position the site content when sidebar is toggled.
- */
-
-.main-wrapper {
-  position: relative;
+table {
   width: 100%;
-  overflow: hidden;
+  border-collapse: collapse;
+  margin: 1.5rem 0;
+
+  th, td {
+    padding: 0.75rem 1rem;
+    text-align: left;
+    border-bottom: 1px solid $color-border;
+  }
+
+  th {
+    font-weight: 600;
+    background: $color-border-light;
+  }
+
+  tr:hover td {
+    background: $color-border-light;
+  }
 }
 
-/*
- * Container - Centering the page content.
- * 
- */
+blockquote {
+  border-left: 4px solid $color-primary;
+  padding: 0.5rem 1rem;
+  margin: 1.5rem 0;
+  color: $color-text-light;
+  background: $color-border-light;
+  border-radius: 0 $radius $radius 0;
+}
+
+// ============================================================
+// Layout
+// ============================================================
 
 .container {
-  width: 90%;
-  max-width: $M; // See breakpoints in css/_sass/helpers/_layout.scss
-  margin: 0 auto;
-
-  &::after { /* Clearfix */
-      content: '';
-      display: table;
-      clear: both;
-  }
-}
-
-
-
-
-
-/*------------------------------------*\
-    #COMPONENTS-HEADER
-\*------------------------------------*/
-
-/*
- * Header
- *
- * header used to keep the logo, site name and short description.
- */
-
-.header {
-  background: $color-white;
-  margin-bottom: 3rem;
-  border-bottom: 1px solid $gray-lighter;
   width: 100%;
-  padding: 1em 0;  
-  @include MQ(M){
-    margin-bottom: 4rem;
-    display: table;
-    height: 50px;
-  }
-  
-  /* 
-   * Special media query hack for small tablet screen.
-   * Due to overlap of menu toggle and the logo.
-   */
-  @media (min-width: 768px) and (max-width: 991px) {
-    .container {
-      width: 75%;
-    }
+  max-width: $max-width;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+.site-content {
+  flex: 1;
+  padding: 2rem 0;
+
+  @media (min-width: 768px) {
+    padding: 3rem 0;
   }
 }
 
-.header .header-logo {
-  min-height: 44px;
-  padding-right: 10px;
-  @include column(1);
-  text-align: center;
-}
+// ============================================================
+// Header
+// ============================================================
 
-.header .header-logo img {
-  text-align: center;
-  margin: 0 auto; 
-}
-
-.header .header-logo a {
-  &:hover, &:focus {
-    border-bottom-color: transparent;
-  }
-}
-
-.header .header-title {
-  display: none;
-}
-
-.header .header-logo, .header .header-title {
-  @include MQ(M) {
-    float: none;
-    width: auto;
-    text-align: left;
-    display: table-cell;
-    vertical-align: middle;
-  }
-}
-
-.header .header-title h3 { 
-  margin-bottom: 15px; 
-  small {
-    padding-left: 10px;
-  }
-}
-
-
-
-
-
-/*------------------------------------*\
-    #COMPONENTS-SIDEBAR
-\*------------------------------------*/
-
-/*
- * Sidebar
- *
- * The off-canvas sidebar, will be triggered by toggle button which will 
- * rendered on the top left corner. 
- *
- */
-
- /* Style and "hide" the sidebar */
-.sidebar {
-  position: fixed;
-  top: 0;
-  bottom: 0;
-  left: -15rem;
-  width: 15rem;
-  visibility: hidden;
-  overflow-y: auto;
-  @include font-size(15px);
-  color: $color-white;
-  background-color: lighten($color-1, 5%);
-  -webkit-transition: all .5s ease-in-out;
-          transition: all .5s ease-in-out;
-  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
-  @include MQ(M) {
-    @include font-size(15px);
-  }
-}
-
-/* Sidebar content */
-
-.sidebar { 
-  text-align: center; 
-  padding: 1em;
-}
-
-.sidebar a {
-  font-weight: normal;
-  color: $color-white;
-  text-decoration: none;
-}
-
-.sidebar .sidebar-info { padding: 1em 0; }
-
-.sidebar img { 
-  width: 80px;
-  height: 80px;
-  margin: 0 auto;   
-  border-radius: 50%;
-}
-
-.sidebar .sidebar-info p { @include font-size(12px); }
-
-.sidebar .sidebar-info.small { padding: 1em 0; }
-
-.sidebar .sidebar-info.small p { @include font-size(12px);}
-
-.sidebar .sidebar-info p:last-child {
-  margin-bottom: 0;
-}
-
-/* Sidebar nav */
-.sidebar .sidebar-nav {
-  margin: 0 -1em;
-  border-top: 1px solid lighten($color-1, 8%);
-}
-
-.sidebar .sidebar-nav .sidebar-nav-item {
-  display: block;
-  padding: .5rem 1rem;
-}
-
-.sidebar .sidebar-nav a {
-  border-bottom: 1px solid lighten($color-1, 8%);
-}
-
-.sidebar .sidebar-nav a.sidebar-nav-item:hover,
-.sidebar .sidebar-nav a.sidebar-nav-item:focus {
-  background: lighten($color-1, 3%);
-}
-
-.sidebar .sidebar-nav .sidebar-nav-item.active { 
-  background-color: darken($color-1, 2%);
-}
-
-/* Hide the sidebar checkbox that we toggle with `.sidebar-toggle` */
-.sidebar-checkbox {
-  display: none;
-}
-
-.wc-img-replace { /* replace text with a background-image */
-  display: inline-block;
-  overflow: hidden;
-  text-indent: 100%;
-  white-space: nowrap;
-  background-repeat: no-repeat;
-  background-position: center center;
-}
- 
-/* Style the `label` that we use to target the `.sidebar-checkbox` */
-.sidebar-toggle {
-  position: absolute;
-  top:  1rem;
-  left: 2rem;
-  display: block;
-  width: 44px;
-  height: 44px;
-  background: #FFF;
-  border-radius: .4em;
-  box-shadow: 0 0 10px rgba(#000, .4);
-  cursor: pointer;
-  @extend .wc-img-replace;
-  span {
-      /* the span element is used to create the menu icon */
-      position: absolute;
-      display: block;
-      width: 20px;
-      height: 2px;
-      background: #555;
-      top: 50%;
-      margin-top: -1px;
-      left: 50%;
-      margin-left: -10px;
-      -webkit-transition: background 0.3s;
-      -moz-transition: background 0.3s;
-      transition: background 0.3s;
-
-      &::before, &::after {
-          content: '';
-          position: absolute;
-          left: 0;
-          background: inherit;
-          width: 100%;
-          height: 100%;
-
-          -webkit-backface-visibility: hidden;
-          backface-visibility: hidden;
-
-          -webkit-transition: -webkit-transform .2s, background 0s;
-          -moz-transition: -moz-transform .2s, background 0s;
-          transition: transform .2s, background 0s;
-      }
-
-      &::before {
-          top: -6px;
-          transform: rotate(0);
-      }
-
-      &::after {
-          bottom: -6px;
-          transform: rotate(0);
-      }
-  }
-}
-
-.sidebar-toggle:active,
-#sidebar-checkbox:checked ~ .sidebar-toggle {
-  box-shadow:none;
-  background: lighten($color-1, 5%);
-  span {
-
-    background: #FFF;
-
-    &::before, &::after {
-        background: rgba(#FFF, 1);
-    }
-
-    &::before {
-        top: -4px;
-        width: 10px;
-        @include transform(rotate(-45deg));
-    }
-    &::after {
-        top: 4px;
-        width: 10px;
-        @include transform(rotate(45deg));
-    }        
-  }
-}
-
-@include MQ(M) {
-  .sidebar-toggle {
-    position: fixed;
-    top:  1.5rem;
-  }
-  .sidebar-toggle:before {
-    padding-bottom: .15rem;
-    border-top-width: .45rem;
-    border-bottom-width: .15rem;
-  }
-}
-
-
-
-/* 
- * Slide effect
- *
- * Handle the sliding effects of the sidebar
- *
- */
- 
-.main-wrapper,
-.sidebar,
-.sidebar-toggle {
-  -webkit-backface-visibility: hidden;
-      -ms-backface-visibility: hidden;
-          backface-visibility: hidden;
-}
-.main-wrapper,
-.sidebar-toggle {
-  // @include transition(transform .5s ease-in-out)
-  -webkit-transition: -webkit-transform .5s ease-in-out;
-  -moz-transition: -moz-transform .5s ease-in-out;
-  -ms-transition: -ms-transform .5s ease-in-out;
-  -o-transition: -o-transform .5s ease-in-out;
-  transition: transform .5s ease-in-out;
-}
- 
-#sidebar-checkbox:checked + .sidebar {
-  z-index: 10;
-  visibility: visible;
-}
-#sidebar-checkbox:checked ~ .sidebar,
-#sidebar-checkbox:checked ~ .main-wrapper,
-#sidebar-checkbox:checked ~ .sidebar-toggle {
-  @include transform(translateX(15rem))
-}
-
-
-
-
-
-/*------------------------------------*\
-    #COMPONENTS-POST
-\*------------------------------------*/
-
-/*
- * Post/Pages 
- * Every post article can be wrapped in a container class named `.post` 
- * and used in post layout under _layout folder.
- * Every page content also wrapped in a container named `.page` and used 
- * in page layout under _layout folder. 
- */
-
-.post, .page {
-  margin-bottom: 2em;
-  padding: 1em;
-  @include MQ(M) {
-    margin-bottom: 4em;
-    padding: 2em;
-  }
+.site-header {
   background: $color-white;
-  @include border-radius(.2em);
-  box-shadow: 0 0 10px rgba(#000, .1);
-  overflow: hidden;
+  border-bottom: 1px solid $color-border;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: $shadow;
 }
 
-/* Article title / Page title */
-.post-title a {
-  color: $color-1;
-  border-bottom-width: 2px;
+.header-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: $header-height;
+  gap: 1rem;
 }
 
-/* Put some padding arround post images */
-.post .post-content img, .page .post-content img {
-  padding: 1em 0;
-}
+.site-title {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  font-weight: 700;
+  font-size: 1.1rem;
+  color: $color-text;
+  white-space: nowrap;
+  flex-shrink: 0;
 
-/* Meta info after post-title */
-.post-meta {
-  color: $gray-light;
-  padding: 1.5em 0 2em 0;
-  letter-spacing: 1px;
-  @include MQ(M) {
-    font-size: 18px;    
+  &:hover {
+    color: $color-primary;
   }
 }
 
-/* Related post articles */
-.related-posts {
-  padding: 1em 0;
-  border-top: 1px solid $gray-lighter;
-  @include MQ(M) {
-    padding: 1em 0 1em 0;
+.site-logo {
+  width: 32px;
+  height: 32px;
+}
+
+.site-nav {
+  display: none;
+  flex-wrap: wrap;
+  gap: 0.25rem;
+
+  @media (min-width: 768px) {
+    display: flex;
+    gap: 0.15rem;
+  }
+
+  &.is-open {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: $header-height;
+    left: 0;
+    right: 0;
+    background: $color-white;
+    border-bottom: 1px solid $color-border;
+    padding: 1rem 1.5rem;
+    box-shadow: $shadow-md;
+    z-index: 99;
   }
 }
 
-.related-posts ul {
-  list-style: none;
+.nav-link {
+  padding: 0.4rem 0.65rem;
+  border-radius: 6px;
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: $color-text-light;
+  transition: all $transition;
+  white-space: nowrap;
+
+  &:hover {
+    color: $color-primary;
+    background: $color-primary-light;
+  }
+
+  &.active {
+    color: $color-primary;
+    background: $color-primary-light;
+  }
 }
 
-.related-posts ul li a {
-  &:hover, &:focus {
-    small {
-      color: inherit; 
+.nav-toggle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  background: none;
+  border: 1px solid $color-border;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background $transition;
+
+  &:hover {
+    background: $color-border-light;
+  }
+
+  @media (min-width: 768px) {
+    display: none;
+  }
+}
+
+.nav-toggle-icon {
+  position: relative;
+  width: 18px;
+  height: 2px;
+  background: $color-text;
+  transition: background $transition;
+
+  &::before, &::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: inherit;
+    transition: transform $transition;
+  }
+  &::before { top: -6px; }
+  &::after { top: 6px; }
+}
+
+// ============================================================
+// Hero (Index page)
+// ============================================================
+
+.hero {
+  margin-bottom: 2rem;
+}
+
+.hero-inner {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+
+  @media (max-width: 480px) {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+.hero-avatar {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  flex-shrink: 0;
+  border: 3px solid $color-border;
+
+  @media (min-width: 768px) {
+    width: 120px;
+    height: 120px;
+  }
+}
+
+.hero-text {
+  h1 {
+    font-size: 1.5rem;
+    margin-bottom: 0.25rem;
+
+    @media (min-width: 768px) {
+      font-size: 1.75rem;
+    }
+  }
+
+  p {
+    color: $color-text-light;
+    margin-bottom: 0.75rem;
+    font-size: 0.95rem;
+  }
+}
+
+.hero-links {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+
+  @media (max-width: 480px) {
+    justify-content: center;
+  }
+
+  a {
+    font-size: 0.875rem;
+    font-weight: 500;
+    padding: 0.35rem 0.75rem;
+    border: 1px solid $color-border;
+    border-radius: 6px;
+    color: $color-text-light;
+    transition: all $transition;
+
+    &:hover {
+      border-color: $color-primary;
+      color: $color-primary;
+      background: $color-primary-light;
     }
   }
 }
 
+// ============================================================
+// Cards
+// ============================================================
 
+.card {
+  background: $color-white;
+  border: 1px solid $color-border;
+  border-radius: $radius;
+  padding: 1.5rem;
+  box-shadow: $shadow;
 
+  @media (min-width: 768px) {
+    padding: 2rem;
+  }
+}
 
+// ============================================================
+// Posts section (index)
+// ============================================================
 
-/*------------------------------------*\
-    #COMPONENTS-PAGINATE-BUTTONS
-\*------------------------------------*/
+.section-title {
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid $color-primary;
+  display: inline-block;
+}
 
-/*
- * Paginate buttons used for index page
- *
- */
+.post-card {
+  margin-bottom: 1rem;
+  transition: box-shadow $transition;
+
+  &:hover {
+    box-shadow: $shadow-md;
+  }
+}
+
+.post-card-title {
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+
+  a {
+    color: $color-text;
+
+    &:hover {
+      color: $color-primary;
+    }
+  }
+}
+
+.post-card-meta {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+  font-size: 0.85rem;
+  color: $color-text-light;
+  margin-bottom: 0.75rem;
+}
+
+.post-card-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+}
+
+.tag {
+  display: inline-block;
+  font-size: 0.75rem;
+  padding: 0.15rem 0.5rem;
+  background: $color-primary-light;
+  color: $color-primary-dark;
+  border-radius: 4px;
+  font-weight: 500;
+}
+
+.post-card-excerpt {
+  font-size: 0.925rem;
+  color: $color-text-light;
+  line-height: 1.6;
+
+  p {
+    margin-bottom: 0.5rem;
+  }
+}
+
+// ============================================================
+// Post/Page content
+// ============================================================
+
+.post-content, .page-content {
+  margin-bottom: 2rem;
+}
+
+.post-header, .page-header {
+  margin-bottom: 1.5rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid $color-border;
+}
+
+.post-title, .page-title {
+  font-size: 1.75rem;
+  margin-bottom: 0.5rem;
+
+  @media (min-width: 768px) {
+    font-size: 2rem;
+  }
+}
+
+.post-meta {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+  font-size: 0.875rem;
+  color: $color-text-light;
+}
+
+.post-categories {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+}
+
+.post-body, .page-body {
+  font-size: 1rem;
+  line-height: 1.8;
+
+  p {
+    margin-bottom: 1.25rem;
+  }
+
+  h2 {
+    margin-top: 2rem;
+    margin-bottom: 0.75rem;
+  }
+
+  h3 {
+    margin-top: 1.5rem;
+    margin-bottom: 0.5rem;
+  }
+
+  ul, ol {
+    margin-bottom: 1.25rem;
+  }
+
+  li {
+    margin-bottom: 0.35rem;
+  }
+
+  img {
+    border-radius: $radius;
+    margin: 1.5rem 0;
+  }
+
+  a {
+    text-decoration: underline;
+    text-underline-offset: 2px;
+
+    &:hover {
+      text-decoration-color: $color-primary;
+    }
+  }
+}
+
+// ============================================================
+// Pagination
+// ============================================================
 
 .pagination {
-  display: block;
-  padding-bottom: 2em;
-  @include MQ(M) {
-    padding-bottom: 4em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 2rem;
+  padding: 1.5rem 0;
+}
+
+.pagination-btn {
+  padding: 0.5rem 1rem;
+  border: 1px solid $color-border;
+  border-radius: 6px;
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: $color-text;
+  transition: all $transition;
+
+  &:hover {
+    border-color: $color-primary;
+    color: $color-primary;
+    background: $color-primary-light;
+  }
+
+  &.disabled {
+    color: $color-border;
+    pointer-events: none;
   }
 }
 
+.pagination-info {
+  font-size: 0.85rem;
+  color: $color-text-light;
+}
 
+// ============================================================
+// Footer
+// ============================================================
 
+.site-footer {
+  background: $color-white;
+  border-top: 1px solid $color-border;
+  padding: 1.5rem 0;
+  margin-top: auto;
+}
 
+.footer-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1rem;
 
-/*------------------------------------*\
-    #COMPONENTS-BANNER-IMAGE
-\*------------------------------------*/
-
-/*
- *
- * Banner image is the main image for aticle/page.
- * see includes/banner-image.html
- *
- */
-
-.post .banner-image, 
-.page .banner-image, 
-.post .banner_video, 
-.page .banner_video {
-  margin: -1em -1em 0 -1em;
-  padding-bottom: 1em;
-  @include MQ(M) {
-    margin: -2em -2em 0 -2em;
+  @media (max-width: 600px) {
+    flex-direction: column;
+    text-align: center;
   }
 }
 
-
-
-
-
-/*------------------------------------*\
-    #COMPONENTS-COMMENTS
-\*------------------------------------*/
-
-/*
- * 
- * Disqus comments, share-buttons 
- */
-
-.comments {
-  border-top: 1px solid $gray-lighter;
-  padding: 1.5em 0 1em 0;
-  @include column(1);
-  display: block;
-  position:relative;
-  @include font-size(14px);
+.footer-info p {
+  font-size: 0.85rem;
+  color: $color-text-light;
+  margin: 0;
 }
 
+.footer-links {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
 
+  .social-link {
+    color: $color-text-light;
+    transition: color $transition;
 
-
-
-/*------------------------------------*\
-    #COMPONENTS-AUTHOR-AND-SHARE-BUTTONS
-\*------------------------------------*/
-
-/*
- * Author information on post page
- */
-
-.author-info {
-  display: block;
-  width: 100%;
-  position: relative;
-  overflow: hidden;
+    &:hover {
+      color: $color-primary;
+    }
+  }
 }
 
-.author, .share-buttons {
-  border-top: 1px solid $gray-lighter;
-  padding: 1em 0 0 0;
-  @include column(1);
-  @include MQ(M) {
-    padding: 1em .5em 0 0;
-    @include column(.5);
-  } 
+// ============================================================
+// 404
+// ============================================================
+
+.error-page {
+  text-align: center;
+  padding: 4rem 0;
+
+  h1 {
+    font-size: 4rem;
+    color: $color-border;
+  }
+
+  p {
+    color: $color-text-light;
+    margin: 1rem 0;
+  }
 }
 
-.author, .share-buttons { 
-  h5, h6 { margin: 0 0 4px 0; }
-  h5 { text-transform: uppercase; color: $gray-darker; }
-  p { @include font-size(14px); }
-  img { float:left; margin-right: 1em; }
-  ul { margin-bottom: 0; }
+// ============================================================
+// Syntax highlighting (Rouge)
+// ============================================================
+
+.highlight {
+  border-radius: $radius;
+  margin: 1.5rem 0;
+
+  pre {
+    margin: 0;
+  }
+
+  .c, .cm, .c1, .cs { color: #94a3b8; font-style: italic; }
+  .k, .kd, .kn, .kp, .kr, .kt { color: #c084fc; }
+  .s, .s1, .s2, .sb, .sc, .sd, .sh, .sx { color: #86efac; }
+  .mi, .mf, .mh, .mo { color: #fbbf24; }
+  .na { color: #67e8f9; }
+  .nf, .nb { color: #60a5fa; }
+  .no { color: #f87171; }
+  .o, .ow { color: #e2e8f0; }
+  .p { color: #e2e8f0; }
+  .nv, .vi, .vg, .vc { color: #fbbf24; }
+}
+
+// ============================================================
+// Utilities
+// ============================================================
+
+// Social media icons (used in contacts page legacy)
+.social-media {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  gap: 0.5rem;
+  justify-content: center;
+
+  li a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background: $color-primary;
+    color: $color-white;
+    font-size: 0;
+    transition: background $transition;
+
+    &:hover {
+      background: $color-primary-dark;
+    }
+  }
+}
+
+// MathJax
+.MathJax {
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+
+// Print styles
+@media print {
+  .site-header, .site-footer, .nav-toggle, .pagination {
+    display: none !important;
+  }
+
+  .site-content {
+    padding: 0;
+  }
+
+  .card {
+    box-shadow: none;
+    border: none;
+    padding: 0;
+  }
 }
