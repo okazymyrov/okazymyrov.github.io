@@ -2,27 +2,10 @@
 layout: default
 ---
 
-<section class="hero card">
-  <div class="hero-inner">
-    {% if site.author_thumbnail %}
-    <img class="hero-avatar" src="{{ site.author_thumbnail | prepend: site.baseurl | prepend: site.url }}" alt="{{ site.author }}">
-    {% endif %}
-    <div class="hero-text">
-      <h1>{{ site.title }}</h1>
-      <p>{{ site.tagline }}</p>
-      <div class="hero-links">
-        {% if site.social.linkedin %}<a href="https://linkedin.com/in/{{ site.social.linkedin }}" target="_blank" rel="noopener noreferrer">LinkedIn</a>{% endif %}
-        {% if site.social.github %}<a href="https://github.com/{{ site.social.github }}" target="_blank" rel="noopener noreferrer">GitHub</a>{% endif %}
-        {% if site.social.email %}<a href="mailto:{{ site.social.email }}">Email</a>{% endif %}
-      </div>
-    </div>
-  </div>
-</section>
-
 <section class="posts-section">
-  <h2 class="section-title">Recent Publications</h2>
+  <h1 class="section-title">Recent Publications</h1>
   {% for post in paginator.posts %}
-  <article class="post-card card">
+  <article class="post-card">
     <h3 class="post-card-title">
       <a href="{{ post.url | prepend: site.baseurl | prepend: site.url }}">{{ post.title }}</a>
     </h3>

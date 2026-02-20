@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="{{ '/assets/css/main.css' | prepend: site.baseurl | prepend: site.url }}">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -27,16 +27,47 @@
     </script>
   </head>
   <body>
-    {% include header.html %}
+    <div class="layout">
+      {% include sidebar.html %}
 
-    <main class="site-content">
-      <div class="container">
-        {{ content }}
+      <div class="layout-main">
+        <header class="mobile-header">
+          <button class="sidebar-toggle" aria-label="Toggle menu" aria-expanded="false">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+          </button>
+          <a class="mobile-title" href="{{ '/' | prepend: site.baseurl | prepend: site.url }}">{{ site.title }}</a>
+        </header>
+
+        <main class="site-content">
+          {{ content }}
+        </main>
+
+        <footer class="site-footer">
+          <p>&copy; {{ 'now' | date: "%Y" }} {{ site.author }}. Powered by <a href="https://jekyllrb.com" target="_blank" rel="noopener noreferrer">Jekyll</a> &amp; <a href="https://pages.github.com" target="_blank" rel="noopener noreferrer">GitHub Pages</a>.</p>
+        </footer>
       </div>
-    </main>
+    </div>
 
-    {% include footer.html %}
+    <div class="sidebar-overlay" aria-hidden="true"></div>
 
+    <script>
+      (function() {
+        const toggle = document.querySelector('.sidebar-toggle');
+        const sidebar = document.querySelector('.sidebar');
+        const overlay = document.querySelector('.sidebar-overlay');
+        function close() {
+          sidebar.classList.remove('is-open');
+          overlay.classList.remove('is-visible');
+          toggle.setAttribute('aria-expanded', 'false');
+        }
+        toggle.addEventListener('click', function() {
+          const open = sidebar.classList.toggle('is-open');
+          overlay.classList.toggle('is-visible');
+          this.setAttribute('aria-expanded', open);
+        });
+        overlay.addEventListener('click', close);
+      })();
+    </script>
     <script async id="MathJax-script" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
   </body>
 </html>
