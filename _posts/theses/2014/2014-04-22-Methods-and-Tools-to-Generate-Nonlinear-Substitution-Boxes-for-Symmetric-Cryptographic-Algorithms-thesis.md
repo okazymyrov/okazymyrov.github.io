@@ -10,7 +10,7 @@ browser_title: "Methods and Tools to Generate Nonlinear Substitution Boxes for S
 comments: true
 ---
 
-Russian: [PDF]({{ site.url }}/assets/attachments/theses/2014/daaa5576d6c6ecb227c6ae888cdce3.pdf) Ukrainian (extented abstract): [PDF]({{ site.url }}/assets/attachments/theses/2014/518f0ecf52bfe3918ceaff5942eb06.pdf)
+Russian: [PDF]({{ site.url }}/assets/attachments/theses/2014/45c9d792653397fca8d105eca826acf521ad2c569e5fdcd7512edfbfa435ff0c.pdf) Ukrainian (extented abstract): [PDF]({{ site.url }}/assets/attachments/theses/2014/6c4062c931bde84de5a71d41a843ea1fc83d858d5e51509894afd5f3ed31e0a4.pdf)
 
 <!--more-->
 

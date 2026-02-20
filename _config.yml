@@ -31,10 +31,8 @@ exclude:
   - CNAME
   - Gemfile
   - Gemfile.lock
-  - Rakefile
   - README.md
   - LICENSE.md
-  - clean.sh
   - .gitignore
   - .sass-cache
   - vendor
@@ -49,6 +47,7 @@ excerpt_separator: "<!--more-->"
 # Plugins
 plugins:
   - jekyll-paginate
+  - jekyll-redirect-from
   - jekyll-seo-tag
   - jekyll-sitemap
   - jekyll-feed

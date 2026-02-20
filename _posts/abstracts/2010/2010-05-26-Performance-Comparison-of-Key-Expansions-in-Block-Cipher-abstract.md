@@ -10,4 +10,4 @@ browser_title: "Performance Comparison of Key Expansions in Block Cipher"
 comments: true
 ---
 
-Russian: [PDF]({{ site.url }}/assets/attachments/abstracts/2010/b159fec20a5007f853df45fec23215.pdf)
+Russian: [PDF]({{ site.url }}/assets/attachments/abstracts/2010/a6a9e9b33029928f436cbec88152801da9519d7bc7833ba36ec7c778dc09535d.pdf)

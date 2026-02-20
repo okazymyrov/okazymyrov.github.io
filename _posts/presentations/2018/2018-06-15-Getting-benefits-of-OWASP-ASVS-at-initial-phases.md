@@ -12,7 +12,7 @@ browser_title: "Getting benefits of OWASP ASVS at initial phases"
 comments: true
 ---
 
-English: [PPTX]({{ site.url }}/assets/attachments/presentations/2018/3ef8cab6957c3f550cd2f3be3e2bfb.pptx) [PDF]({{ site.url }}/assets/attachments/presentations/2018/f5b0aa33a12e6ad903dede76501da9.pdf) <span style="float: right;">[NDC {Oslo} 2018](https://ndcoslo.com/)</span>
+English: [PPTX]({{ site.url }}/assets/attachments/presentations/2018/255423cc354cebf8ba2339250423ffc26bdfc691f1c4c77c5d61dc9ba9ab98ff.pptx) [PDF]({{ site.url }}/assets/attachments/presentations/2018/09eac0f7843b207c970e05043342d16f3dcfdedd74cae81408c6928ceff121f7.pdf) <span style="float: right;">[NDC {Oslo} 2018](https://ndcoslo.com/)</span>
 
 <!--more-->
 

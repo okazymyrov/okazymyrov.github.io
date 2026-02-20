@@ -10,7 +10,7 @@ browser_title: "Algebraic Properties of Kalyna's Key Schedule"
 comments: true
 ---
 
-Russian: [PDF]({{ site.url }}/assets/attachments/articles/2010/9691823db6acee5fb932ecbd053397.pdf)
+Russian: [PDF]({{ site.url }}/assets/attachments/articles/2010/cde57cff97c6a7f1910781ed400ed44a645c1e84bc87ab905fec9f58bb8b6ae1.pdf)
 
 <!--more-->
 

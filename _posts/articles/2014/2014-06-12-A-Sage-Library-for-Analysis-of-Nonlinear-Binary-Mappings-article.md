@@ -10,7 +10,7 @@ browser_title: "A Sage Library for Analysis of Nonlinear Binary Mappings"
 comments: true
 ---
 
-English: [PDF]({{ site.url }}/assets/attachments/articles/2014/f9c21fb942f714ef308234921a2258.pdf)
+English: [PDF]({{ site.url }}/assets/attachments/articles/2014/5efe77e6379891c8476b4dfce0c5ae34e65aa876c4e9075372ebb98763bdd02f.pdf)
 
 <!--more-->
 

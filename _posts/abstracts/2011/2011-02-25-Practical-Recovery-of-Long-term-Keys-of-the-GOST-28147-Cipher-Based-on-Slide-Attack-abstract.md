@@ -10,4 +10,4 @@ browser_title: "Practical Recovery of Long-term Keys of the GOST 28147 Cipher Ba
 comments: true
 ---
 
-Russian: [PDF]({{ site.url }}/assets/attachments/abstracts/2011/b358258f617d053a435e1d699a0bbb.pdf)
+Russian: [PDF]({{ site.url }}/assets/attachments/abstracts/2011/17243c8c5190810254e0326ba6ca73413dda8a48c061c2575076de5135879247.pdf)

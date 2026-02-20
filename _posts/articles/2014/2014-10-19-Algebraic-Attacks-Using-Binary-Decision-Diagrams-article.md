@@ -10,7 +10,7 @@ browser_title: "Algebraic Attacks Using Binary Decision Diagrams"
 comments: true
 ---
 
-English: [PDF]({{ site.url }}/assets/attachments/articles/2014/06138e10487c0e93c8727bb71370f1.pdf)
+English: [PDF]({{ site.url }}/assets/attachments/articles/2014/d54f9db9b26dd22eb52d18df6f80a71962b87a638ec63b223488e8688826b6b7.pdf)
 
 <!--more-->
 

@@ -10,7 +10,7 @@ browser_title: "Methods and Tools for Analysis of Symmetric Cryptographic Primit
 comments: true
 ---
 
-English: [PDF]({{ site.url }}/assets/attachments/theses/2014/724b4abd42f31615ba01a85996c813.pdf)
+English: [PDF]({{ site.url }}/assets/attachments/theses/2014/6b6853609a0a46ec25be24b209412b49a7ad64cc804397574e0725c3f5c0dc7b.pdf)
 
 <!--more-->
 

@@ -10,7 +10,7 @@ browser_title: "Application of Vectorial Boolean Functions for Substitutions Gen
 comments: true
 ---
 
-Russian: [PDF]({{ site.url }}/assets/attachments/articles/2012/66b6890898f6dd7ab954867c03cd4c.pdf)
+Russian: [PDF]({{ site.url }}/assets/attachments/articles/2012/beb4787709c3c23683d70832b16ed5cf61bd89b75c9b10969f79d253c87f324b.pdf)
 
 <!--more-->
 

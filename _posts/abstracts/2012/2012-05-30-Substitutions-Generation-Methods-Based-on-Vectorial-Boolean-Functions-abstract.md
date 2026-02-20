@@ -10,4 +10,4 @@ browser_title: "Substitutions Generation Methods Based on Vectorial Boolean Func
 comments: true
 ---
 
-Russian: [PDF]({{ site.url }}/assets/attachments/abstracts/2012/9328c2d035786a36ce65724d4588d0.pdf)
+Russian: [PDF]({{ site.url }}/assets/attachments/abstracts/2012/17b86b95ee4fbc9a99ec1ad492e7c19e2988c0870293d67cfc5daf5dd30bc3da.pdf)

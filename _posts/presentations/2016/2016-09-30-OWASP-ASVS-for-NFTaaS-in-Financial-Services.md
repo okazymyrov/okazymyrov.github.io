@@ -10,7 +10,7 @@ browser_title: "OWASP ASVS for NFTaaS in Financial Services"
 comments: true
 ---
 
-English: [PDF]({{ site.url }}/assets/attachments/presentations/2016/4837d2ef08d7b2b3aaaaae8ca5f35e.pdf) [PPTX]({{ site.url }}/assets/attachments/presentations/2016/923a410ab9ce4d30265eaae4d8981c.pptx) <span style="float: right;">[TestWarez 2016](http://en.testwarez.pl/)</span>
+English: [PDF]({{ site.url }}/assets/attachments/presentations/2016/6c812cac36cb96cef2ab82e24ed9f4936cf91c920a59d247565e7a0756fc3ff3.pdf) [PPTX]({{ site.url }}/assets/attachments/presentations/2016/40bc394981e0eff643d654396730782193368ccf4bf07b878451d732494b8216.pptx) <span style="float: right;">[TestWarez 2016](http://en.testwarez.pl/)</span>
 
 <!--more-->
 

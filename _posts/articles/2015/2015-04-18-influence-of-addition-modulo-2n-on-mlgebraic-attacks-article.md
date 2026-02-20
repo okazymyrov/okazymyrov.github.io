@@ -10,7 +10,7 @@ browser_title: "Influence of Addition Modulo $2^n$ on Algebraic Attacks"
 comments: true
 ---
 
-English: [PDF]({{ site.url }}/assets/attachments/articles/2015/3856d196e159368deb33c7502c140d.pdf)
+English: [PDF]({{ site.url }}/assets/attachments/articles/2015/6595d0a3911220238f6bdf08e567e50e9f1b7071e0d95128483e7c54dc5d0e7a.pdf)
 
 <!--more-->
 

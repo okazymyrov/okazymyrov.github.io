@@ -10,4 +10,4 @@ browser_title: "Backward States Graph Analysis of the MICKEY Cipher"
 comments: true
 ---
 
-Russian: [PDF]({{ site.url }}/assets/attachments/abstracts/2011/66bc3bbb0fe6c922db461d03901df6.pdf)
+Russian: [PDF]({{ site.url }}/assets/attachments/abstracts/2011/f9072e08e99b28211051a274ae9a4a4dcf2adc298509a654bc39a6de29e5251a.pdf)

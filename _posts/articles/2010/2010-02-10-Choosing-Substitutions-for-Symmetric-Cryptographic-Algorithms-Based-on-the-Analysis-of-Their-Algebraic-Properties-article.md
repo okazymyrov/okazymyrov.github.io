@@ -10,7 +10,7 @@ browser_title: "Choosing Substitutions for Symmetric Cryptographic Algorithms Ba
 comments: true
 ---
 
-Russian: [PDF]({{ site.url }}/assets/attachments/articles/2010/d6d74173e1b4c583dd6bd2b832e491.pdf)
+Russian: [PDF]({{ site.url }}/assets/attachments/articles/2010/41231f7f5bfb29a751f5ec1909b404526bb4b89e419ad84e834ff7864144f5f5.pdf)
 
 <!--more-->
 

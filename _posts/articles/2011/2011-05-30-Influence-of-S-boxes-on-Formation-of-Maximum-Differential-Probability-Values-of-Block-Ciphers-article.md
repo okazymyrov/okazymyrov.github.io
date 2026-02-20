@@ -10,7 +10,7 @@ browser_title: "Influence of S-boxes on Formation of Maximum Differential Probab
 comments: true
 ---
 
-Russian: [PDF]({{ site.url }}/assets/attachments/articles/2011/cfaa87a9c06dc6dec87de99fe9a7b7.pdf)
+Russian: [PDF]({{ site.url }}/assets/attachments/articles/2011/ea7f96b385fe7debbee7bdb8cbefc6db3158fd7b4a9e754adeab5642682dc3df.pdf)
 
 <!--more-->
 

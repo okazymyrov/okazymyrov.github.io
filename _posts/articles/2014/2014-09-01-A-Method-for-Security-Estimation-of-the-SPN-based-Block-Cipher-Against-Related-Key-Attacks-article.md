@@ -10,7 +10,7 @@ browser_title: "A Method for Security Estimation of the SPN-based Block Cipher A
 comments: true
 ---
 
-English: [PDF]({{ site.url }}/assets/attachments/articles/2015/144b776e40ea2b63c5279287894ec5.pdf)
+English: [PDF]({{ site.url }}/assets/attachments/articles/2015/570258596c96e899bbbea1750ab1f458c99ced290cf52c91478f2dc67804658b.pdf)
 
 <!--more-->
 

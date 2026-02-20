@@ -10,7 +10,7 @@ browser_title: "Key Expansion Comparison of Block Ciphers"
 comments: true
 ---
 
-Russian: [PDF]({{ site.url }}/assets/attachments/articles/2010/12d5faef33e48cb245690a27390707.pdf)
+Russian: [PDF]({{ site.url }}/assets/attachments/articles/2010/50a803bdeab8ade7b92a027d26bd6c4b7f38c520683cf5bdaf0b3243f8e23759.pdf)
 
 <!--more-->
 

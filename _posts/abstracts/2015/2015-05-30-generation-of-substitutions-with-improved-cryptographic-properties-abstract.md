@@ -10,7 +10,7 @@ browser_title: "Generation of Substitutions With Improved Cryptographic Properti
 comments: true
 ---
 
-Russian: [PDF]({{ site.url }}/assets/attachments/abstracts/2015/5a3c5b441a3feeb8a2e1ef0621ca25.pdf)
+Russian: [PDF]({{ site.url }}/assets/attachments/abstracts/2015/e3bc6cd6b2fc19fcd67aff4e70b944ccb8a67dcb2edcd131d09b9c285ed0d5ae.pdf)
 
 <!--more-->
 

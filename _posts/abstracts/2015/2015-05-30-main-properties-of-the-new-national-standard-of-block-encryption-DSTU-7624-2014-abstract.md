@@ -10,7 +10,7 @@ browser_title: "Main Properties of the New National Standard of Block Encryption
 comments: true
 ---
 
-Russian: [PDF]({{ site.url }}/assets/attachments/abstracts/2015/62ecf5f38d1a41bbdc35452c6fa17a.pdf)
+Russian: [PDF]({{ site.url }}/assets/attachments/abstracts/2015/f726e8c12b28609ac3cd8abe2f24e1d31c85d562ed6090e51396181a054955ec.pdf)
 
 <!--more-->
 

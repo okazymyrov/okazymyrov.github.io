@@ -10,4 +10,4 @@ browser_title: "Approaches for Substitutions Generation With Optimal Parameters"
 comments: true
 ---
 
-Russian: [PDF]({{ site.url }}/assets/attachments/abstracts/2011/d91fea75cfa1ce24242059e5a10f50.pdf)
+Russian: [PDF]({{ site.url }}/assets/attachments/abstracts/2011/5fbd382a4d11d44b5ad91b047109eb79c41f673d6316ff38bcfedd8d0ce6a341.pdf)

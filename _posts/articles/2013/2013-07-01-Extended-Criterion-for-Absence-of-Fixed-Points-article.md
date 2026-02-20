@@ -10,7 +10,7 @@ browser_title: "Extended Criterion for Absence of Fixed Points"
 comments: true
 ---
 
-English: [PDF]({{ site.url }}/assets/attachments/articles/2013/d233e99910b37f919b7b2b54638f40.pdf)
+English: [PDF]({{ site.url }}/assets/attachments/articles/2013/306e985298b069582da322ac714a8ba0ea8840eefed72358f209fda3ea6bb3bb.pdf)
 
 <!--more-->
 

@@ -10,4 +10,4 @@ browser_title: "Block Ciphers"
 comments: true
 ---
 
-English: [PDF]({{ site.url }}/assets/attachments/presentations/2011/81d370d3795c40cde6fde9b82e119f.pdf) <span style="float: right;">PhD Seminar 2011</span>
+English: [PDF]({{ site.url }}/assets/attachments/presentations/2011/81a9b6f5dc820d551d58fc15b83a538cc3e97cab102c140edf3cbecb39b807fd.pdf) <span style="float: right;">PhD Seminar 2011</span>

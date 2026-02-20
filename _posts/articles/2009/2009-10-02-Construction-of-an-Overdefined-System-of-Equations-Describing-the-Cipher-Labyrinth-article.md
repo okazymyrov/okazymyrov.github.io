@@ -10,7 +10,7 @@ browser_title: "Construction of an Overdefined System of Equations Describing th
 comments: true
 ---
 
-Russian: [PDF]({{ site.url }}/assets/attachments/articles/2009/efd8193abe9a4abc170d2123d6f8a1.pdf)
+Russian: [PDF]({{ site.url }}/assets/attachments/articles/2009/8b92087734c7e2de8b2aa1b9c9fcafe4e51359807b29b155b4a6764e6d2d02e4.pdf)
 
 <!--more-->
 

@@ -10,4 +10,4 @@ browser_title: "A New Encryption Standard of Ukraine: The Kalyna Block Cipher"
 comments: true
 ---
 
-English: [PDF]({{ site.url }}/assets/attachments/presentations/2015/f2cd75359084bff3570450d94608b9.pdf) <span style="float: right;">[NISK 2015](http://itkonferanse.hials.no/en/program-detail.php)</span>
+English: [PDF]({{ site.url }}/assets/attachments/presentations/2015/38f9e730e57638183d92e535fdb0e1d17a21a56322bd04b200747f15820558f9.pdf) <span style="float: right;">[NISK 2015](http://itkonferanse.hials.no/en/program-detail.php)</span>

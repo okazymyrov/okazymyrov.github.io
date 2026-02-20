@@ -10,7 +10,7 @@ browser_title: "A Method for Generation of High-Nonlinear S-Boxes Based on Gradi
 comments: true
 ---
 
-English: [PDF]({{ site.url }}/assets/attachments/articles/2013/e3287dd49be589112141556c873e0c.pdf) Russian: [PDF]({{ site.url }}/assets/attachments/articles/2013/8567bedb5529b0d448e72ab82b1e7d.pdf)
+English: [PDF]({{ site.url }}/assets/attachments/articles/2013/06170f211a205fb7888030aac3b7c0cd60e19687a301a97a32f5a418cd5d69e8.pdf) Russian: [PDF]({{ site.url }}/assets/attachments/articles/2013/368c9344870deca3d6eea7e75caf1a4eb5f459cbd10a14206e1cab3197832735.pdf)
 
 <!--more-->
 

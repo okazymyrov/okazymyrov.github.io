@@ -11,7 +11,7 @@ browser_title: "Jumping from Tenable's SecurityCenter CV to production environme
 comments: true
 ---
 
-English: [PPTX]({{ site.url }}/assets/attachments/presentations/2017/faa5dfc3d1d6cc8d3e440199e69cf8.pptx) [PDF]({{ site.url }}/assets/attachments/presentations/2017/dc435945c8ecf6049b8b13f14d0afd.pdf) <span style="float: right;">[PHDays 7](https://www.phdays.com)</span>
+English: [PPTX]({{ site.url }}/assets/attachments/presentations/2017/5828a0919ef5212b1dfa61c86cffb6b1ef3de3da7d7144687aff9838dae491a8.pptx) [PDF]({{ site.url }}/assets/attachments/presentations/2017/449ffc4c31d3feb7bb686c8c5824fca9f846be6de208d9385b04737f9bedccde.pdf) <span style="float: right;">[PHDays 7](https://www.phdays.com)</span>
 
 <!--more-->
 

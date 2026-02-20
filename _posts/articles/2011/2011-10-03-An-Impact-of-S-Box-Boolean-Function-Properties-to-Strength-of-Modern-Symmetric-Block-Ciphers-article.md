@@ -10,7 +10,7 @@ browser_title: "An Impact of S-box Boolean Function Properties to Strength of Mo
 comments: true
 ---
 
-English: [PDF]({{ site.url }}/assets/attachments/articles/2011/e594a07e985ae29687ac95636d79bb.pdf)
+English: [PDF]({{ site.url }}/assets/attachments/articles/2011/06ea463abd8e49209393b21e90df8cc3f7583c68102385ff08b2c000006a09f3.pdf)
 
 <!--more-->
 

@@ -11,7 +11,7 @@ browser_title: "Kan krypto gjøre at hvor data lagres blir uvesentlig?"
 comments: true
 ---
 
-English: [PPTX]({{ site.url }}/assets/attachments/presentations/2018/bea7b2a258524af3ff9f582d7e80fc.pptx) [PDF]({{ site.url }}/assets/attachments/presentations/2018/d5d942fb87eb93abd03848f28dc99b.pdf) <span style="float: right;">[EHiN 2018](https://ehin.no/)</span>
+English: [PPTX]({{ site.url }}/assets/attachments/presentations/2018/f360baafd0447ee4af607cb6cc39eb4b9929c664120c99aa4f1484355548830c.pptx) [PDF]({{ site.url }}/assets/attachments/presentations/2018/b86c67176a3371da3f965045e680abbcbfcf7ab265446ce24d183a915f4f2c9e.pdf) <span style="float: right;">[EHiN 2018](https://ehin.no/)</span>
 
 <!--more-->
 

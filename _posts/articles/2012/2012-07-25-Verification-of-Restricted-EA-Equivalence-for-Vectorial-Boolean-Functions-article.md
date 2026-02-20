@@ -10,7 +10,7 @@ browser_title: "Verification of Restricted EA-Equivalence for Vectorial Boolean 
 comments: true
 ---
 
-English: [PDF]({{ site.url }}/assets/attachments/articles/2012/4975ff2c4d3a8c538ef97052a9a822.pdf)
+English: [PDF]({{ site.url }}/assets/attachments/articles/2012/913c426d70c9c8b74a2c4ac1f2dca322cb265c747914a84e73dd46e87c09367f.pdf)
 
 <!--more-->
 

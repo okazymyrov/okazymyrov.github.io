@@ -10,5 +10,5 @@ browser_title: "Cryptographic Properties of Substitutions"
 comments: true
 ---
 
-English: [PDF]({{ site.url }}/assets/attachments/presentations/2012/a02790a456ad4b47d6284574ad81fa.pdf) <span style="float: right;">PhD Seminar 2012</span>
+English: [PDF]({{ site.url }}/assets/attachments/presentations/2012/5a180aa1f398fd386652f6c322f923a939d9668dcefe02d70bd177cab9f990c7.pdf) <span style="float: right;">PhD Seminar 2012</span>
 

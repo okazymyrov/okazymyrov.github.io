@@ -10,7 +10,7 @@ browser_title: "Algebraic Aspects of the Russian Hash Standard GOST R 34.11-2012
 comments: true
 ---
 
-English: [PDF]({{ site.url }}/assets/attachments/articles/2013/6795e47b49068629cbcb2d323faafa.pdf)
+English: [PDF]({{ site.url }}/assets/attachments/articles/2013/1bcb113c90bf9f83ff298d79a50605609154ef627233cf4326d55ce6085bf7c2.pdf)
 
 <!--more-->
 

@@ -10,4 +10,4 @@ browser_title: "Goals and Requirements of ICAO to PKI for Electronic Passports"
 comments: true
 ---
 
-Russian: [PDF]({{ site.url }}/assets/attachments/abstracts/2008/c26de8720264a8319a7f82cee17734.pdf)
+Russian: [PDF]({{ site.url }}/assets/attachments/abstracts/2008/0a1dc00019d472b295bbb43cca784db543e83dd9fcb247040fc1ba9174e25714.pdf)

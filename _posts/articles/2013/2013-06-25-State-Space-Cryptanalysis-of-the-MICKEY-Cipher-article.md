@@ -10,7 +10,7 @@ browser_title: "State Space Cryptanalysis of the MICKEY Cipher"
 comments: true
 ---
 
-English: [PDF]({{ site.url }}/assets/attachments/articles/2013/13c464f5080846e6bec2988fed1d2a.pdf) Russian: [PDF]({{ site.url }}/assets/attachments/articles/2011/bfdbc6d5d3dd40484047151726008b.pdf) Russian: [PDF]({{ site.url }}/assets/attachments/articles/2012/cb2a798f82b13d640692a32579215b.pdf) 
+English: [PDF]({{ site.url }}/assets/attachments/articles/2013/c38a522cec683eb23b733eab305364f099f6ad8e944ec84797a2640fe85f47b1.pdf) Russian: [PDF]({{ site.url }}/assets/attachments/articles/2011/d49a6eb7eef637fb78719d5a8842b39ff443d9cc2d663bb49841c6801cfa3bc6.pdf) Russian: [PDF]({{ site.url }}/assets/attachments/articles/2012/97cd15b49e4e547c0e4ef7302db969dd3ad40962c5497b5c2d96476e8a65f76c.pdf) 
 
 <!--more-->
 
